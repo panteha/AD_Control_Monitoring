@@ -46,7 +46,7 @@ def make_plots():
 	return '''
 	<head>
   <script src="/static/plotly-latest.min.js"></script>
-  <META HTTP-EQUIV="refresh" CONTENT="30">
+  <META HTTP-EQUIV="refresh" CONTENT="5*30">
 </head>
 
 <body>

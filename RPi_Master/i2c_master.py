@@ -34,7 +34,7 @@ while True:
 			print 'temperature is', temperature
 			print 'distance is', distance_from_gasholder
 
-			time.sleep(30)
+			time.sleep(5*60)
 	except:
 		print 'caught exception', sys.exc_info()[1]
 		traceback.print_exc(file=sys.stdout)

@@ -4,11 +4,11 @@
 #include <DallasTemperature.h>
 
 
-const int PIN_FILLING_LED = 4;
-const int PIN_EMPTYING_LED = 3;
-const int TRIGGER_PIN = 5;
-const int ECO_PIN = 6;
-const int BOILER_PIN = 2;
+const int PIN_FILLING_LED = 12;
+const int PIN_EMPTYING_LED = 13;
+const int TRIGGER_PIN = 6;
+const int ECO_PIN = 7;
+const int BOILER_PIN = 4;
 const int TEMPERATURE_PIN = 8;
 
 const int PERIOD_ULTRASONIC_SENSOR = 2000;
@@ -76,7 +76,7 @@ void loop() {
     Serial.println("C");
 
     
-    if (distance_from_gasholder > 10 && distance_from_gasholder < 50) {
+    if (distance_from_gasholder > 46 && distance_from_gasholder < 131) {
       turn_on_boiler();
       Serial.println("The boiler is on");
     }
